@@ -1,0 +1,35 @@
+.menu {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  height: 30vw;
+  color: rgb(114, 112, 112);
+
+  // background-color: grey;
+
+  // background-color: rgb(108, 228, 134);
+  z-index: 0;
+
+  &--about-me {
+    top: -10%;
+    left: 20%;
+    z-index: -1;
+  }
+
+  &--description {
+    top: -9.3%;
+    left: 30%;
+    z-index: -2;
+
+    // top: 5%;
+    // left: 80%;
+    transform: translate(-50%, -50%) rotate(2deg);
+    // z-index: -2;
+  }
+
+  &--steps {
+    top: -25%;
+    left: 25%;
+    z-index: -2;
+  }
+}

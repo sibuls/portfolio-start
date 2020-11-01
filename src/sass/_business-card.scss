@@ -1,0 +1,26 @@
+.business-card {
+  position: absolute;
+  left: 0;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+
+  // margin: 25px auto;
+  padding: 25px 15px 15px 15px;
+  // background-color: rgb(255, 255, 255);
+  background-color: rgb(195, 200, 203);
+
+  box-shadow: 0 1px 5px 1px rgb(155, 152, 152);
+
+  -moz-transform: skew(36deg, -15deg);
+  -webkit-transform: skew(36deg, -15deg);
+  -o-transform: skew(36deg, -15deg);
+  -ms-transform: skew(36deg, -15deg);
+  transform: skew(36deg, -15deg);
+  // text-decoration: underline;
+
+  & p {
+    padding: 4px;
+  }
+}

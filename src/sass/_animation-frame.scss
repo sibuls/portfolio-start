@@ -1,0 +1,11 @@
+.animation-frame {
+  position: absolute;
+  // background-color: rgba(247, 204, 204, 0.612);
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 70vw;
+  height: 126vw;
+}
