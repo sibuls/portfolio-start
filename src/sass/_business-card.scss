@@ -7,11 +7,13 @@
   transform: translate(-50%, -50%);
 
   // margin: 25px auto;
-  padding: 25px 15px 15px 15px;
+  padding: 5px;
   // background-color: rgb(255, 255, 255);
-  background-color: rgb(195, 200, 203);
+  background-color: rgb(180, 193, 199);
+  // background-color: whitesmoke;
+  // border: double 5px rgb(180, 193, 199);
 
-  box-shadow: 0 1px 5px 1px rgb(155, 152, 152);
+  box-shadow: 0 1px 4px 0px rgb(155, 152, 152);
 
   -moz-transform: skew(36deg, -15deg);
   -webkit-transform: skew(36deg, -15deg);

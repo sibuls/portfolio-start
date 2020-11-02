@@ -12,7 +12,7 @@ const Phone = () => {
       {' '}
       <div className='phone__frame'></div>
       <div className='phone__screen'>
-        {isAboutMeActive ? <AboutMeInfo /> : <p>ssfsfs</p>}
+        {isAboutMeActive ? <AboutMeInfo /> : <p>informacja</p>}
       </div>
       <div className='phone__microphone'></div>
       <div className='phone__microphone phone__microphone--second'></div>

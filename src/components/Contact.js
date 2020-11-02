@@ -1,16 +1,15 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { AppContext, defaultObject } from '../AppContext';
 import BusinessCard from './BusinessCard';
-
-const AboutMe = () => {
+const Contact = () => {
   const { handleBusinessCardClick } = useContext(AppContext);
 
   return (
-    <div className='menu menu--about-me' onClick={handleBusinessCardClick}>
+    <div className='menu menu--contact' onClick={handleBusinessCardClick}>
       {/* <BusinessCard text='Who am I' /> */}
-      <BusinessCard text='kim jestem ' />
+      <BusinessCard text='kontakt' />
     </div>
   );
 };
 
-export default AboutMe;
+export default Contact;

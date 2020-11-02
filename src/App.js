@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Div100vh from 'react-div-100vh';
 import { AppContext, defaultObject } from './AppContext';
 
 import AboutMe from './components/AboutMe';
@@ -18,7 +19,25 @@ const App = () => {
   };
 
   return (
-    <div className='wrapper'>
+    <Div100vh className='wrapper'>
+      <div className='topbar'>
+        <p>https://www.this.areaisdisabled.pl</p>
+      </div>
+
+      <div className='bottombar'>
+        <p> lewo prawo</p>
+      </div>
+      {/* <div className='wrapper'> */}
+      {/* <div className='line1'>1</div>
+      <div className='line2'>2</div>
+      <div className='line3'>3</div>
+      <div className='line4'>4</div>
+      <div className='line5'>5</div>
+      <div className='line6'>6</div>
+      <div className='line7'>7</div>
+      <div className='line8'>8</div>
+      <div className='line9'>9</div>
+      <div className='line10'>10</div> */}
       <AppContext.Provider
         value={{
           isAboutMeActive: isAboutMeActive,
@@ -27,7 +46,8 @@ const App = () => {
       >
         <AnimationFrame />
       </AppContext.Provider>
-    </div>
+      {/* </div> */}
+    </Div100vh>
   );
 };
 

@@ -1,45 +1,160 @@
-// :root {
-//   --app-height: 100%;
-// }
-
-// html,
-// body {
-//   padding: 0;
-//   margin: 0;
-//   overflow: hidden;
-//   width: 100vw;
-//   height: 100vh;
-
-//   @media not all and (hover: hover) {
-//     height: var(--app-height);
-//   }
-// }
 body {
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
   overflow: hidden;
   position: relative;
+  // height: 100vh;
+  // background-color: rgba(68, 225, 68, 0.742);
 }
-html {
-  height: -webkit-fill-available;
-}
+
 .wrapper {
-  width: 100vw; /* Use vh as a fallback for browsers that do not support Custom Properties */
-  // height: 100%;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+  width: 100vw;
   overflow: hidden;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  // background-color: rgba(255, 166, 0, 0.708);
+}
 
-  // height: calc(var(--vh, 1vh) * 100);
-  // height: 100%;
-  // border: 1px red dotted;
-  // overflow: hidden;
+.topbar {
+  display: none;
 
-  // background-color: darkblue;
-  // position: absolute;
-  // top: 50%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
-  // background-color: #3498db;
+  @media (max-resolution: 1dppx) {
+    position: absolute;
+    top: 0;
+
+    width: 100vw;
+    height: 6.8vh;
+    background-color: rgba(213, 211, 211, 0.701);
+    z-index: 4;
+    background-color: white;
+    border: black solid 2px;
+    padding: 2vh 0 2vh 1rem;
+    display: flex;
+    // align-self: center;
+  }
+
+  @media (max-resolution: 1dppx) and (min-width: 370px) and (max-width: 380px) {
+    height: 8.5vh;
+    padding: 3vh 0 3vh 1rem;
+  }
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.bottombar {
+  display: none;
+
+  @media (max-resolution: 1dppx) {
+    position: absolute;
+    bottom: 0%;
+    width: 100vw;
+    height: 6.3vh;
+    z-index: 4;
+    background-color: white;
+    border: black solid 2px;
+    padding: 2vh 0 2vh 1rem;
+    display: flex;
+    // align-self: center;
+  }
+
+  @media (max-resolution: 1dppx) and (min-width: 370px) and (max-width: 380px) {
+    position: absolute;
+    bottom: 0%;
+    width: 100vw;
+    height: 6vh;
+    z-index: 4;
+    background-color: rgb(136, 63, 63);
+    border: black solid 2px;
+    padding: 2vh 0 2vh 1rem;
+    display: flex;
+    // align-self: center;
+  }
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.line1 {
+  background-color: rgba(255, 0, 0, 0.666);
+  border: 1px dotted grey;
+  position: absolute;
+  top: 0;
+  height: 10%;
+  width: 100vw;
+}
+.line2 {
+  background-color: rgba(255, 255, 0, 0.557);
+  border: 1px dotted grey;
+  position: absolute;
+  top: 10%;
+  height: 10%;
+  width: 100vw;
+  width: 100vw;
+}
+.line3 {
+  background-color: rgba(255, 0, 0, 0.666);
+  border: 1px dotted grey;
+  position: absolute;
+  top: 20%;
+  height: 10%;
+  width: 100vw;
+}
+.line4 {
+  background-color: rgba(255, 255, 0, 0.557);
+  border: 1px dotted grey;
+  position: absolute;
+  top: 30%;
+  height: 10%;
+  width: 100vw;
+}
+.line5 {
+  background-color: rgba(255, 0, 0, 0.666);
+  border: 1px dotted grey;
+  position: absolute;
+  top: 40%;
+  height: 10%;
+  width: 100vw;
+}
+.line6 {
+  background-color: rgba(255, 255, 0, 0.557);
+  border: 1px dotted grey;
+  position: absolute;
+  top: 50%;
+  height: 10%;
+  width: 100vw;
+}
+.line7 {
+  background-color: rgba(255, 0, 0, 0.666);
+  border: 1px dotted grey;
+  position: absolute;
+  top: 60%;
+  height: 10%;
+  width: 100vw;
+}
+.line8 {
+  background-color: rgba(255, 255, 0, 0.557);
+  border: 1px dotted grey;
+  position: absolute;
+  top: 70%;
+  height: 10%;
+  width: 100vw;
+}
+.line9 {
+  background-color: rgba(255, 0, 0, 0.666);
+  border: 1px dotted grey;
+  position: absolute;
+  top: 80%;
+  height: 10%;
+  width: 100vw;
+}
+.line10 {
+  background-color: rgba(255, 255, 0, 0.557);
+  border: 1px dotted grey;
+  position: absolute;
+  top: 90%;
+  height: 10%;
+  width: 100vw;
 }
