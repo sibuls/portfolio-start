@@ -8,14 +8,14 @@
   top: 80%;
   left: 0%;
 
-  // width: 70%;
-  // height: 65%;
+  width: 70%;
+  height: 65%;
 
-  width: 30%;
-  height: 25%;
+  // width: 30%;
+  // height: 25%;
 
   position: absolute;
-  transform: translate(-50%, -50%) skew(15deg, 0deg) scale(1) rotate(-5deg);
+  transform: translate(-50%, -50%) skew(15deg, 0deg) scale(1.2) rotate(-5deg);
 
   &-anime {
     animation: phonezoom 1s linear;
@@ -90,6 +90,13 @@
     height: 32px;
     border: solid 2px #aca8a5;
     border-radius: 50%;
+  }
+
+  @media (max-resolution: 1dppx) and (min-width: 1280px) {
+    width: 12vw;
+    height: 22vw;
+    top: 70%;
+    left: 20%;
   }
 }
 

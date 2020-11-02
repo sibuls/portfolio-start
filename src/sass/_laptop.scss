@@ -1,43 +1,16 @@
 .laptop {
-  position: absolute;
-  width: 80%;
-  height: 80%;
-  border: 1px blue dotted;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-}
+  display: none;
 
-@keyframes openlaptop {
-  0% {
-    // background-color: grey;
-    transform: translate(-50%, -50%) rotate(43deg) skew(-42deg, -22deg);
-    top: 59%;
-    left: 58%;
-
-    width: 22%;
-    height: 50%;
-  }
-  25% {
-  }
-  50% {
-    transform: translate(-50%, -50%) rotate(0deg) skew(0deg, 0deg);
-    top: 59%;
-    left: 58%;
-
-    width: 22%;
-    height: 50%;
-  }
-  75% {
-  }
-  100% {
-    top: 30%;
-    left: 50%;
-
-    width: 35%;
-    height: 40%;
-
-    transform: translate(-50%, -50%) rotate(0deg) skew(0deg, 0deg);
+  @media (min-width: 1280px) {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    // border: 1px blue dotted;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%) rotate(3deg) skew(0deg, 0deg);
+    display: block;
   }
 }
 
@@ -53,7 +26,7 @@
   width: 55%;
   height: 75%;
 
-  transform: translate(-50%, -50%) skew(10deg, 0deg) scale(1) rotate(0deg);
+  transform: translate(-50%, -50%) skew(-10deg, 0deg) scale(1) rotate(0deg);
 
   z-index: 4;
 
@@ -118,11 +91,11 @@
 }
 
 .laptop-main {
-  top: 85%;
-  left: 66%;
+  top: 86%;
+  left: 38%;
 
-  width: 32%;
-  height: 60%;
+  width: 55%;
+  height: 37%;
 
   //   top: 30%;
   //   left: 50%;
@@ -144,7 +117,7 @@
   -webkit-transform: rotate(43deg) skew(-40deg, -22deg);
   -o-transform: rotate(43deg) skew(-40deg, -22deg);
   -ms-transform: rotate(43deg) skew(-40deg, -22deg);
-  transform: translate(-50%, -50%) rotate(33deg) skew(-57deg, 0deg);
+  transform: translate(-50%, -50%) rotate(0deg) skew(-45deg, 0deg);
 
   &__frame {
     position: absolute;
@@ -175,8 +148,8 @@
     background-color: rgb(75, 72, 72);
     position: absolute;
     // box-shadow: 0px 0px 0px 0px rgb(80, 80, 80), 0px 0px 0px 0px rgb(60, 60, 60);
-    width: 50%;
-    height: 96%;
+    width: 96%;
+    height: 50%;
     left: 2%;
     top: 2%;
     border-radius: 10px;
@@ -204,15 +177,15 @@
     transform: rotate(0deg) skew(0deg, 0deg);
     transform-origin: left bottom;
     position: absolute;
-    bottom: -18px;
-    left: 18px;
+    bottom: -16px;
+    right: -18px;
     // border: 1px green solid;
-    border-top: 2px solid rgb(159, 157, 157);
+    border-top: 1px solid rgb(159, 157, 157);
     border-left: 1px solid rgb(159, 157, 157);
-    border-right: 2px solid rgb(159, 157, 157);
-    border-bottom: 2px solid rgb(159, 157, 157);
-    width: 104%;
-    height: 104%;
+    border-right: 1px solid rgb(159, 157, 157);
+    border-bottom: 1px solid rgb(159, 157, 157);
+    width: 100%;
+    height: 100%;
     background-color: #adacad;
     border-radius: 25px;
     z-index: -1;
