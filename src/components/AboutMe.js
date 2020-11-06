@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { AppContext, defaultObject } from '../AppContext';
 import BusinessCard from './BusinessCard';
 
@@ -6,9 +6,13 @@ const AboutMe = () => {
   const { handleBusinessCardClick } = useContext(AppContext);
 
   return (
-    <div className='menu menu--about-me' onClick={handleBusinessCardClick}>
+    <div
+      className='menu about-me'
+      // className='menu about-me--unorganized'
+      onClick={() => handleBusinessCardClick('aboutme')}
+    >
       {/* <BusinessCard text='Who am I' /> */}
-      <BusinessCard text='kim jestem ' />
+      <BusinessCard text='Who am I' />
     </div>
   );
 };

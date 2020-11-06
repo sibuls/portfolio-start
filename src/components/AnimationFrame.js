@@ -11,13 +11,14 @@ import Steps from './Steps';
 
 const AnimationFrame = () => {
   return (
-    <div className='animation-frame'>
+    <div className='animation__frame'>
+      {/* <div className='animation__line'></div> */}
       <Phone />
       <Laptop />
       <AboutMe />
       <Description />
       <Steps />
-      <Responsive />
+      {/* <Responsive /> */}
       <Projects />
       <Contact />
     </div>

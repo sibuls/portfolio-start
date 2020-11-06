@@ -5,7 +5,12 @@ const Contact = () => {
   const { handleBusinessCardClick } = useContext(AppContext);
 
   return (
-    <div className='menu menu--contact' onClick={handleBusinessCardClick}>
+    <div
+      className='menu contact'
+      // className='menu   contact--unorganized'
+
+      onClick={handleBusinessCardClick}
+    >
       {/* <BusinessCard text='Who am I' /> */}
       <BusinessCard text='kontakt' />
     </div>

@@ -6,7 +6,12 @@ const Projects = () => {
   const { handleBusinessCardClick } = useContext(AppContext);
 
   return (
-    <div className='menu menu--projects' onClick={handleBusinessCardClick}>
+    <div
+      className='menu  projects'
+      // className='menu   projects-unorganized'
+
+      onClick={handleBusinessCardClick}
+    >
       {/* <BusinessCard text='Who am I' /> */}
       <BusinessCard text='projekty' />
     </div>

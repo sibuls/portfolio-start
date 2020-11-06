@@ -6,7 +6,7 @@ import Hand from './Hand';
 
 const Laptop = () => {
   const { isAboutMeActive } = useContext(AppContext);
-  console.log(isAboutMeActive);
+  // console.log(isAboutMeActive);
   return (
     <div className='laptop laptop-anime'>
       <div className='laptop-top'>

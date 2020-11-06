@@ -1,0 +1,29 @@
+html {
+  font-size: $xs-font-size;
+  $main-margin-responsive: 20px;
+  color: $color-font;
+
+  font-family: $font-montserrat;
+  @media screen and (min-width: map-get($breakpoints, xs)) {
+    font-size: $sm-font-size;
+  }
+  @media screen and (min-width: map-get($breakpoints, sm)) {
+    font-size: $md-font-size;
+  }
+  @media screen and (min-width: map-get($breakpoints, md)) {
+    font-size: $lg-font-size;
+  }
+}
+
+strong {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  // margin-bottom: $main-spacing / 2;
+}

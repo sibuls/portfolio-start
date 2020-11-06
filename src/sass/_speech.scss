@@ -1,0 +1,38 @@
+.speech {
+  position: relative;
+  background: $color-speech;
+  border-radius: 0.5rem;
+  color: white;
+  margin: 0 0 $main-padding $main-padding;
+  font-size: 1rem;
+  line-height: 1.2rem;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    width: 0;
+    height: 0;
+    border: 10px transparent solid;
+    border-top-color: $color-speech;
+    border-bottom: 0;
+    border-left: 0;
+    margin-bottom: -10px;
+  }
+
+  &--question {
+    margin: 0 $main-padding $main-padding 0;
+    background-color: $color-speech-question;
+    color: $color-font;
+
+    &:after {
+      right: auto;
+      left: 15%;
+      border: 10px solid transparent;
+      border-top-color: $color-speech-question;
+      border-bottom: 0;
+      border-right: 0;
+    }
+  }
+}
