@@ -1,5 +1,6 @@
 .laptop {
   display: none;
+  grid-area: laptop;
 
   @media (min-width: 1280px) {
     position: absolute;

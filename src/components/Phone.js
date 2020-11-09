@@ -54,24 +54,9 @@ const Phone = () => {
 
   //  fourth animation on phone parts - black screen (browser)
   const screenAnime = keyframes`
-  0% {${menuActive === 'start' ? ' top: 0%; left: -100%; opacity:0;  ' : null}}
-  90% {${
-    menuActive === 'start' ? ' top: 0%; left: -100%; opacity:0;    ' : null
-  }}
+  0% {${menuActive === 'start' ? '   opacity:0;  ' : null}}
+  90% {${menuActive === 'start' ? '   opacity:0;    ' : null}}
   `;
-
-  // const screenDuplicatedAnime = keyframes`
-  // 0% {${menuActive === 'start' ? 'top: 0%; left: 200%; opacity:0;' : null}}
-  // 90% {${menuActive === 'start' ? 'top: 0%; left: 200%; opacity:0;' : null}}
-  // `;
-  // const screenDuplicatedAnime2 = keyframes`
-  // 0% {${menuActive === 'start' ? 'top: -200%; left: 0; opacity:0;' : null}}
-  // 90% {${menuActive === 'start' ? 'top: -200%; left: 0; opacity:0;' : null}}
-  // `;
-  // const screenDuplicatedAnime3 = keyframes`
-  // 0% {${menuActive === 'start' ? 'top: 400%; left: 0; opacity:0;' : null}}
-  // 90% {${menuActive === 'start' ? 'top: 400%; left: 0; opacity:0;' : null}}
-  // `;
 
   const screenFade = keyframes`
     0% {opacity:0;}
@@ -101,18 +86,6 @@ const Phone = () => {
     animation: 5s 0s ${screenAnime} ease-out 1;
   `;
 
-  // there have to be another animation for another div cause animation affect on the same property "left" , if another property needs to be changed it could be done in the same animatiopn without creating new "div"
-
-  // const ScreenDuplicated = styled.div`
-  //   animation: 5s 0s ${screenDuplicatedAnime} ease-out 1;
-  // `;
-  // const ScreenDuplicated2 = styled.div`
-  //   animation: 5s 0s ${screenDuplicatedAnime2} ease-out 1;
-  // `;
-  // const ScreenDuplicated3 = styled.div`
-  //   animation: 5s 0s ${screenDuplicatedAnime3} ease-out 1;
-  // `;
-
   const Browser = styled.div`
     animation: ${screenTime} ${screenFade} ease-out 1;
   `;
@@ -136,15 +109,8 @@ const Phone = () => {
       <DivAnimation className='phone phone-anime'>
         {' '}
         <Frame className='phone-part phone__frame'></Frame>
-        <Glass className='phone-part phone__glass'>
-          {/* <div className='phone-part phone__glass--bottom'></div> */}
-        </Glass>
-        {/* this div has beeen created just to make another black screen for animation */}
-        {/* <ScreenDuplicated className='phone-part phone__screen phone__screen--iphone'></ScreenDuplicated>
-        <ScreenDuplicated2 className='phone-part phone__screen phone__screen--iphone'></ScreenDuplicated2>
-        <ScreenDuplicated3 className='phone-part phone__screen phone__screen--iphone'></ScreenDuplicated3> */}
-        {/*  */}
-        <Screen className='phone-part phone__screen phone__screen--iphone'>
+        <Glass className='phone-part phone__glass'></Glass>
+        <Screen className='phone-part phone__screen phone__screen--modelx'>
           <Browser className='phone__browser'>
             <Info />
           </Browser>

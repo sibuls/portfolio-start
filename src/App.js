@@ -46,32 +46,9 @@ const App = () => {
   return (
     <div className='wrapper'>
       <div className='wrapper__textBody'>
-        {/* {textCss()}
-        {textReact()} */}
         {textBody}
         {textBody}
         {textBody}
-
-        {/* {textCss()}
-        {textReact()}
-        {textCss()}
-        {textReact()} */}
-
-        {/* <div className='wrapper__square wrapper__square--text-react'>
-          {textReact()}
-          {textReact()}
-          {textReact()}
-        </div>
-        <div className='wrapper__square wrapper__square--text-css wrapper__square--text-css--bottom'>
-          {textCss()}
-          {textCss()}
-          {textCss()}
-        </div>
-        <div className='wrapper__square wrapper__square--text-react wrapper__square--text-react--bottom'>
-          {textReact()}
-          {textReact()}
-          {textReact()}
-        </div> */}
       </div>
       <AppContext.Provider
         value={{
