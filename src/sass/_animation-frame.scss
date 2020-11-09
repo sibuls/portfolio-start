@@ -26,6 +26,9 @@
   // height: 63vh;
   // max-height: 100vh;
 
+  display: grid;
+  // grid-template:
+
   @media (max-resolution: 1dppx) and (min-width: 1280px) {
     width: 100vw;
     height: 50vw;

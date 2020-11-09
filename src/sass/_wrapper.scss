@@ -2,7 +2,7 @@ body {
   position: relative;
   min-height: 100vh;
   width: 100vw;
-  background: $color-background-p;
+  background: $color-blue-dark;
 }
 
 .paper {
@@ -61,7 +61,18 @@ body {
   justify-content: center;
   justify-items: center;
   align-content: center;
-  // background-color: $color-background;
+  // background: white;
+
+  &__textBody {
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    top: -10%;
+    left: -15%;
+    transform: translate(0%, 0%) rotate(-15deg);
+    background: $color-body;
+    color: $color-font-body;
+  }
 }
 
 .info {

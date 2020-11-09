@@ -28,6 +28,7 @@
     border: 1px $color-phone-frame solid;
     border-radius: 25px;
     background: $color-phone-background;
+    box-shadow: 0px 0px 2px 0px (white);
   }
 
   &__glass {
@@ -59,7 +60,7 @@
       display: none;
     }
 
-    &--iphone {
+    &--modelx {
       width: 90%;
       height: 75%;
       left: 5%;
@@ -77,19 +78,34 @@
 
   &__bottom {
     top: 2%;
-    left: -2%;
+    left: -3%;
+    // background: linear-gradient(
+    //     120deg,
+    //     #a0856e 1%,
+    //     #dcc2ab 10%,
+    //     #a07e5d 20%,
+    //     #c4b29b 43%,
+    //     #7e6f5c 50%,
+    //     #ae9474 60%,
+    //     #ab9882 80%,
+    //     #d8c3b0 100%
+    //   ),
+    //   #a98d72;
+
     background: linear-gradient(
         120deg,
-        #a0856e 1%,
-        #dcc2ab 10%,
-        #a07e5d 20%,
-        #c4b29b 43%,
-        #7e6f5c 50%,
-        #ae9474 60%,
-        #ab9882 80%,
-        #d8c3b0 100%
+        darken(#987e68, 20%) 1%,
+        darken(#dcc2ab, 10%) 10%,
+        darken(#ac8863, 10%) 20%,
+        darken(#c4b29b, 0%) 43%,
+        darken(#bd9b6e, 20%) 50%,
+        darken(#bd9d72, 20%) 55%,
+        darken(#ae9474, 0%) 60%,
+        darken(#ab9882, 10%) 80%,
+        darken(#d8c3b0, 00%) 100%
       ),
       #a98d72;
+
     box-shadow: -1px 1px 0px 0px #a0856e;
     border-radius: 25px;
     z-index: -1;
@@ -148,7 +164,7 @@
       background: $color-phone-background-inside;
     }
 
-    &--iphone {
+    &--modelx {
       bottom: 3%;
       left: 50%;
       transform: translateX(-50%);

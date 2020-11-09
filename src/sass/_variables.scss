@@ -1,19 +1,37 @@
 // main colors
 
+$color-gray-xxlight: #f2f2f2;
 $color-gray-xlight: #d7d5d5;
 $color-gray-light: #bdb8b8;
 $color-gray-medium: #f2f0f0;
 $color-gray-dark: #e6e2e2;
 $color-font: grey;
 
+$color-gray-xxlight: #f2f2f2;
+$color-gray-xlight: #bbbaba;
+$color-gray-light: #7d7c7c;
+$color-gray-medium: #f2f0f0;
+$color-gray-dark: #949494;
+$color-font: grey;
+
+// body
+$color-body: rgb(53, 53, 53);
+$color-font-body: rgba(222, 222, 222, 0.16);
+
+$color-body: rgb(21, 38, 63);
+$color-font-body: rgba(222, 222, 222, 0.16);
+
+$color-body: rgba(21, 67, 40, 0.982);
+$color-font-body: rgba(232, 232, 232, 0.201);
+
 //my friend Paulina's wish (demand) color :)
 
 $color-blue-xlight: #05172d;
 $color-blue-light: #010a13;
 $color-blue-medium: #0b2647;
-$color-blue-dark: #112946;
+$color-blue-dark: #ffffff;
 
-$color-background-p: linear-gradient(
+$color-background-paulina: linear-gradient(
     135deg,
     rgba($color-blue-xlight, 1) 1%,
     rgba($color-blue-xlight, 1) 10%,
@@ -29,12 +47,28 @@ $color-background-p: linear-gradient(
 
 $color-background: linear-gradient(
     135deg,
-    rgba($color-gray-xlight, 1) 1%,
-    rgba($color-gray-xlight, 1) 10%,
+    rgba($color-gray-medium, 1) 1%,
+    rgba(white, 1) 3%,
+    rgba($color-gray-xxlight, 1) 10%,
     rgba($color-gray-medium, 1) 30%,
     rgba($color-gray-xlight, 1) 60%,
     rgba($color-gray-medium, 1) 80%,
-    rgba($color-gray-dark, 1) 90%,
+    rgba($color-gray-xlight, 1) 90%,
+    rgba($color-gray-dark, 1) 100%
+  ),
+  $color-gray-dark;
+
+// color backround lighter
+$color-background-body: linear-gradient(
+    135deg,
+    rgba(white, 1) 1%,
+    rgba($color-gray-xxlight, 1) 5%,
+    rgba(white, 1) 10%,
+    rgba($color-gray-medium, 1) 30%,
+    rgba($color-gray-xxlight, 1) 60%,
+    rgba(white, 1) 70%,
+    rgba($color-gray-medium, 1) 80%,
+    rgba($color-gray-xxlight, 1) 90%,
     rgba($color-gray-dark, 0.8) 100%
   ),
   $color-gray-light;
@@ -47,16 +81,19 @@ $color-paper: #e9e4c9;
 // color of phone
 $color-phone-background: linear-gradient(
     120deg,
-    #c9c9c9 1%,
-    #ffffff 10%,
+    #fff9f9 0%,
+    #fffefe 5%,
+    #e8e5e5 10%,
     #fcfcfc 20%,
-    #d3d2d0 43%,
-    #ffffff 50%,
-    #c4c4c4 60%,
+    #ffffff 43%,
+    #ffffff 45%,
+    #ebe9e9 50%,
+    #f0f0f0 60%,
     #ffffff 80%,
-    #d3d3d3 100%
+    #e8e7e7 100%
   ),
   #bfbcba;
+
 $color-phone-background-inside: linear-gradient(
     120deg,
     #f9f9f9 1%,
@@ -85,6 +122,9 @@ $color-businesscard-background-pencil: linear-gradient(
 // color speech
 $color-speech: darken(#0081ff, 5%);
 $color-speech: #04488c;
+$color-speech: #04488ce3;
+// $color-speech: #043d76e0;
+// $color-speech: lighten(rgba(36, 65, 103, 0.934), 0%);
 $color-speech-question: lightgrey;
 
 // fonts sizes

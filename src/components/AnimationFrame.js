@@ -6,7 +6,7 @@ import Description from './Description';
 import Laptop from './Laptop';
 import Phone from './Phone';
 import Projects from './Projects';
-import Responsive from './Responsive';
+
 import Steps from './Steps';
 
 const AnimationFrame = () => {
@@ -18,7 +18,7 @@ const AnimationFrame = () => {
       <AboutMe />
       <Description />
       <Steps />
-      {/* <Responsive /> */}
+
       <Projects />
       <Contact />
     </div>
