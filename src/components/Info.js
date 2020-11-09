@@ -25,7 +25,7 @@ const Info = () => {
         );
         break;
       default:
-        return <div>Choose any option</div>;
+        return <div>Choose any option from cards. </div>;
       // code block
     }
   };

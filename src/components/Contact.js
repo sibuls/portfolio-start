@@ -12,7 +12,7 @@ const Contact = () => {
       onClick={handleBusinessCardClick}
     >
       {/* <BusinessCard text='Who am I' /> */}
-      <BusinessCard text='kontakt' />
+      <BusinessCard text='contact' />
     </div>
   );
 };

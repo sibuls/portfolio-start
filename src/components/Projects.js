@@ -13,7 +13,7 @@ const Projects = () => {
       onClick={handleBusinessCardClick}
     >
       {/* <BusinessCard text='Who am I' /> */}
-      <BusinessCard text='projekty' />
+      <BusinessCard text='projects' />
     </div>
   );
 };

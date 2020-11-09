@@ -4,7 +4,6 @@ import { AppContext } from '../AppContext';
 import AboutMe from './AboutMe';
 import AboutMeInfo from './AboutMeInfo';
 import DescriptionInfo from './DescriptionInfo';
-import Hand from './Hand';
 import '../sass/style.scss';
 import styled, { css, keyframes, createGlobalStyle } from 'styled-components';
 import Info from './Info';
@@ -14,81 +13,118 @@ const Phone = () => {
   const animationTop = menuActive === 'start' ? '50%' : '60%';
   const animationLeft = menuActive === 'start' ? '150%' : '51%';
   const animationIterationCount = menuActive === 'start' ? '1' : '8';
-  const animationTime = menuActive === 'start' ? '1s' : '0.1s';
-  const screenTime = menuActive === 'start' ? '3s' : '1s';
-  const screenOpacity = menuActive === 'start' ? '0' : '0.5';
+  const animationTime = menuActive === 'start' ? '5s' : '0.1s';
+  const screenTime = menuActive === 'start' ? '10s' : '1s';
+  const screenOpacity = menuActive === 'start' ? '0' : '0.6';
 
-  const phoneRing = keyframes`
+  // main animation - makes whole phone visible
+  const phoneShow = keyframes`
   0% {
-  
-   top:${animationTop};
-   left:${animationLeft};
+  top:${animationTop};
+  left:${animationLeft};
   transform: translate(-50%, -50%) skew(15deg, 0deg) scale(1.2) rotate(-5deg);
   }
-  50% {
-    // transform: translate(-50%, -50%)   skew(15deg, 0deg) scale(1.2) rotate(-16deg)  ;
-  }
-  100% {
-    transform: translate(-50%, -50%) skew(15deg, 0deg) scale(1.2) rotate(-5deg);
-    top: 60%;
-    left: 51%;
-  }
-`;
+  10%{
+  top: 60%;
+  left: 51%;
+  }`;
 
-  const screenFade = keyframes`
-0% {
+  // animation black/white screen - works for start animation and changing menu
 
-
- opacity: 0;
-}
-50% {
-  opacity:${screenOpacity}
-
-}
-100% {
- 
-  opacity:1;
-
-
-}
-`;
-
-  const DivAnimation = styled.div`
-    animation: ${animationTime} ${phoneRing} ease-out ${animationIterationCount};
+  // fist animation of phone parts - gold bottom
+  const phoneBottomAnime = keyframes`
+  0% {${menuActive === 'start' ? 'top: 60%; left: 51%; opacity:0;' : null}}
   `;
 
-  const ScreenAnimation = styled.div`
+  //  second animation of phone parts - white frame
+  const frameAnime = keyframes`
+  0% {${menuActive === 'start' ? 'top: -50%; left: 51%; opacity:0;  ' : null}}
+  `;
+
+  //  third animation on phone parts - glass
+  const glassAnime = keyframes`
+  0% {${menuActive === 'start' ? 'top: -30%; left: 0%; opacity:0;' : null}}
+  20% {${
+    menuActive === 'start'
+      ? 'top: -150%; left: 0%; opacity:0;  transform: rotate(-90deg);'
+      : null
+  }}
+  30% {${menuActive === 'start' ? 'top: -130%; left: 0%; opacity:1;' : null}}
+  `;
+
+  //  fourth animation on phone parts - black screen (browser)
+  const screenAnime = keyframes`
+  0% {${menuActive === 'start' ? ' top: 0%; left: -100%; opacity:0;  ' : null}}
+  60% {${menuActive === 'start' ? ' top: 0%; left: -100%; opacity:0;  ' : null}}
+  90% {${menuActive === 'start' ? ' top: 0%; left: -100%; opacity:0;  ' : null}}
+  // 100% {${menuActive === 'start' ? '  opacity:1   ' : null}}
+
+  `;
+  const screenFade = keyframes`
+    0% {opacity:0;}
+    // 50% {opacity:${screenOpacity}}
+    60% {opacity:${screenOpacity}}
+    100% {opacity:1;}`;
+
+  const accesoriesAnime = keyframes`
+  0% {${menuActive === 'start' ? 'opacity:0;' : null}}
+  60% {${menuActive === 'start' ? 'opacity:0;' : null}}
+  `;
+
+  //
+
+  const DivAnimation = styled.div`
+    animation: ${animationTime} ${phoneShow} ease-out 1;
+  `;
+
+  const PhoneBottom = styled.div`
+    animation: 1s 0s ${phoneBottomAnime} ease-out 1;
+  `;
+  const Frame = styled.div`
+    animation: 3s 0s ${frameAnime} ease-out 1;
+  `;
+
+  const Screen = styled.div`
+    animation: 5s 0s ${screenAnime} ease-out 1;
+  `;
+
+  const Browser = styled.div`
     animation: ${screenTime} ${screenFade} ease-out 1;
+  `;
+  const Glass = styled.div`
+    animation: 4s 0s ${glassAnime} ease-out 1;
+  `;
+
+  const ButtonAnime = styled.div`
+    animation: 6s 0s ${accesoriesAnime} ease-out 1;
+  `;
+
+  const Microphone = styled.div`
+    animation: 6s 0s ${accesoriesAnime} ease-out 1;
+  `;
+  const Camera = styled.div`
+    animation: 6s 0s ${accesoriesAnime} ease-out 1;
   `;
 
   const phone = () => {
     return (
       <DivAnimation className='phone phone-anime'>
         {' '}
-        <div className='phone-part phone__frame'></div>
-        <div className='phone-part phone__glass'>
-          <div className='phone-part phone__glass--bottom'></div>
-        </div>
-        <div className='phone-part phone__screen phone__screen--iphone'>
-          <ScreenAnimation className='phone__browser'>
+        <Frame className='phone-part phone__frame'></Frame>
+        <Glass className='phone-part phone__glass'>
+          {/* <div className='phone-part phone__glass--bottom'></div> */}
+        </Glass>
+        <Screen className='phone-part phone__screen phone__screen--iphone'>
+          <Browser className='phone__browser'>
             <Info />
-          </ScreenAnimation>
-        </div>
-        <div className='phone-part phone__microphone'></div>
-        <div className='phone-part phone__microphone phone__microphone--second'></div>
-        <div className='phone-part phone__front-camera'></div>
-        <div className='phone-part phone__home-button phone__home-button--iphone'>
+          </Browser>
+        </Screen>
+        <Microphone className='phone-part phone__microphone phone__microphone--second'></Microphone>
+        <Camera className='phone-part phone__front-camera'></Camera>
+        <ButtonAnime className='phone-part phone__home-button phone__home-button--iphone'>
           <div className='phone-part phone__home-button--inside'></div>
-        </div>
-        {/* <div className='phone-part phone__arrow'>
-          <div className='phone-part  phone__triangle'></div>
-          <div className='phone-part phone__line'></div>
-        </div> */}
-        {/* <div className='phone-part phone__squares'>
-          <div className='phone-part phone__square'></div>
-          <div className='phone-part phone__square phone__square--bottom'></div>
-        </div> */}
-        <div className='phone-part phone__bottom'></div>
+        </ButtonAnime>
+        <PhoneBottom className='phone-part phone__bottom'></PhoneBottom>
       </DivAnimation>
     );
   };

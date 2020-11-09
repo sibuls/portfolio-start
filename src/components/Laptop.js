@@ -2,7 +2,6 @@ import React, { useContext, useState } from 'react';
 import { AppContext } from '../AppContext';
 import AboutMe from './AboutMe';
 import AboutMeInfo from './AboutMeInfo';
-import Hand from './Hand';
 
 const Laptop = () => {
   const { isAboutMeActive } = useContext(AppContext);

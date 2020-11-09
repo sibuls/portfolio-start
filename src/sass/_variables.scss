@@ -1,25 +1,54 @@
 // main colors
+
+$color-gray-xlight: #d7d5d5;
 $color-gray-light: #bdb8b8;
 $color-gray-medium: #f2f0f0;
+$color-gray-dark: #e6e2e2;
+$color-font: grey;
+
+//my friend Paulina's wish (demand) color :)
+
+$color-blue-xlight: #05172d;
+$color-blue-light: #010a13;
+$color-blue-medium: #0b2647;
+$color-blue-dark: #112946;
+
+$color-background-p: linear-gradient(
+    135deg,
+    rgba($color-blue-xlight, 1) 1%,
+    rgba($color-blue-xlight, 1) 10%,
+    rgba($color-blue-medium, 1) 30%,
+    rgba($color-blue-xlight, 1) 60%,
+    rgba($color-blue-medium, 1) 80%,
+    rgba($color-blue-dark, 1) 90%,
+    rgba($color-blue-dark, 0.8) 100%
+  ),
+  $color-blue-light;
 
 // color background
+
 $color-background: linear-gradient(
     135deg,
-    rgba($color-gray-light, 1) 1%,
-    rgba($color-gray-medium, 0.8) 100%
+    rgba($color-gray-xlight, 1) 1%,
+    rgba($color-gray-xlight, 1) 10%,
+    rgba($color-gray-medium, 1) 30%,
+    rgba($color-gray-xlight, 1) 60%,
+    rgba($color-gray-medium, 1) 80%,
+    rgba($color-gray-dark, 1) 90%,
+    rgba($color-gray-dark, 0.8) 100%
   ),
   $color-gray-light;
-
-$color-font: grey;
 
 // color of paper
 $color-paper: #e9e4c9;
 
+// test
+
 // color of phone
 $color-phone-background: linear-gradient(
     120deg,
-    #f9f9f9 1%,
-    #d3cec9 10%,
+    #c9c9c9 1%,
+    #ffffff 10%,
     #fcfcfc 20%,
     #d3d2d0 43%,
     #ffffff 50%,
@@ -40,44 +69,22 @@ $color-phone-glass: rgba(#293040, 0.8);
 $color-phone-frame: rgb(41, 41, 41);
 $color-phone-bottom: #adacad;
 $color-phone-frame: #b8b8b8;
-$color-phone-screen: whitesmoke;
 
 // color of business card
-$color-businesscard-background: linear-gradient(
-    150deg,
-    rgba($color-gray-light, 1) 1%,
-    rgba($color-gray-medium, 1) 40%,
-    rgba($color-gray-light, 0.8) 40.1%,
-    rgba($color-gray-medium, 1) 45%,
-    rgba($color-gray-medium, 0.8) 47.1%,
-    rgba($color-gray-medium, 1) 50%,
-    rgba($color-gray-light, 0.8) 50.1%,
-    rgba($color-gray-medium, 1) 53%,
-    rgba($color-gray-medium, 0.8) 53.1%,
-    rgba($color-gray-medium, 0.8) 100%
-  ),
-  $color-gray-light;
 
-$color-businesscard-background-simple: linear-gradient(
-    150deg,
-    rgba($color-gray-light, 1) 1%,
-    rgba($color-gray-medium, 0.8) 100%
-  ),
-  $color-gray-light;
 $color-businesscard-background-pencil: linear-gradient(
     to bottom,
     rgba(rgb(247, 247, 247), 1) 1%,
     rgba($color-gray-light, 0.8) 50.1%,
-    rgba($color-gray-medium, 1) 73%,
-    rgba($color-gray-medium, 0.8) 73.1%,
+    rgba($color-gray-dark, 1) 73%,
+    rgba($color-gray-dark, 0.8) 73.1%,
     rgba(rgb(160, 158, 158), 0.8) 100%
   ),
   rgb(171, 168, 168);
-$color-businesscard-font: #9c9e9f;
-$color-businesscard-shadow: rgb(181, 179, 179);
 
 // color speech
 $color-speech: darken(#0081ff, 5%);
+$color-speech: #04488c;
 $color-speech-question: lightgrey;
 
 // fonts sizes
@@ -87,12 +94,9 @@ $md-font-size: 18px;
 $lg-font-size: 20px;
 
 // fonts family
-$font-imb: 'IBM Plex Sans', sans-serif;
+
 $font-montserrat: 'Montserrat', sans-serif;
-$font-commisioner: 'Commissioner', sans-serif;
 $font-hand: 'Nothing You Could Do', cursive;
-$font-merr: 'Merriweather', serif;
-$font-ale: 'Alegreya', serif;
 $font-draper: 'Draper', sans-serif;
 
 // margins
