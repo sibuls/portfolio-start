@@ -2,7 +2,6 @@ body {
   position: relative;
   min-height: 100vh;
   width: 100vw;
-  background: $color-blue-dark;
 }
 
 .paper {
@@ -54,18 +53,14 @@ body {
 
 .wrapper {
   position: relative;
-  min-height: 100vh;
+  height: 250vh;
   width: 100vw;
   overflow: hidden;
+  // border: 12px dotted blue;
   // display: flex;
   // justify-content: center;
   // justify-items: center;
   // align-content: center;
-
-  // display: grid;
-  grid-template: 'animationframe';
-  grid-template-rows: auto;
-  grid-template-columns: auto;
 
   // @media (max-resolution: 1dppx) and (min-width: 1280px) {
   //   width: 100vw;
@@ -80,10 +75,10 @@ body {
   // background: white;
   &__textBody {
     position: absolute;
-    width: 150%;
+    width: 350%;
     height: 150%;
     top: -10%;
-    left: -15%;
+    left: -50%;
     transform: translate(0%, 0%) rotate(-15deg);
     background: $color-body;
     color: $color-font-body;

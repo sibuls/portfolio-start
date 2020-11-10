@@ -10,7 +10,7 @@ import Info from './Info';
 
 const Phone = () => {
   const { isAboutMeActive, menuActive } = useContext(AppContext);
-  const animationTop = menuActive === 'start' ? '50%' : '60%';
+  const animationTop = menuActive === 'start' ? '50%' : '56%';
   const animationLeft = menuActive === 'start' ? '150%' : '51%';
   const animationIterationCount = menuActive === 'start' ? '1' : '8';
   const animationTime = menuActive === 'start' ? '5s' : '0.1s';
@@ -25,7 +25,7 @@ const Phone = () => {
   transform: translate(-50%, -50%) skew(15deg, 0deg) scale(1.2) rotate(-5deg);
   }
   10%{
-  top: 60%;
+  top: 56%;
   left: 51%;
   }`;
 

@@ -5,7 +5,7 @@ function Steps(props) {
   return (
     <div
       className='menu  steps'
-      // className='menu   steps-unorganized'
+      //  className='menu  steps  steps--unorganized'
     >
       <BusinessCard text={'Steps'} />
     </div>

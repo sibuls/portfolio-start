@@ -7,8 +7,7 @@ const Contact = () => {
   return (
     <div
       className='menu contact'
-      // className='menu   contact--unorganized'
-
+      // className='menu   contact contact--unorganized'
       onClick={handleBusinessCardClick}
     >
       {/* <BusinessCard text='Who am I' /> */}

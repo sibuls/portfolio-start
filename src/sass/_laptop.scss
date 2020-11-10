@@ -1,6 +1,14 @@
 .laptop {
-  display: none;
-  grid-area: laptop;
+  // display: none;
+  // border: 12px dotted red;
+  position: absolute;
+  width: 200%;
+  height: 70%;
+
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(3deg) skew(0deg, 0deg);
+  // display: block;
 
   @media (min-width: 1280px) {
     position: absolute;
@@ -30,11 +38,13 @@
 
   z-index: 4;
 
-  //   animation: openlaptop 3s linear;
+  @media (min-width: 1280px) {
+    top: 30%;
+    left: 50%;
 
-  //   &-anime {
-  //     animation: phonezoom 1s linear;
-  //   }
+    width: 55%;
+    height: 75%;
+  }
 
   &__frame {
     position: absolute;

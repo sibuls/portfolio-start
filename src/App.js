@@ -1,12 +1,6 @@
 import React, { useState } from 'react';
-import Div100vh from 'react-div-100vh';
 import { AppContext, defaultObject } from './AppContext';
-
-import AboutMe from './components/AboutMe';
 import AnimationFrame from './components/AnimationFrame';
-import Description from './components/Description';
-import Phone from './components/Phone';
-import Steps from './components/Steps';
 
 const App = () => {
   const [isAboutMeActive, setIsAboutMeActive] = useState(
@@ -46,6 +40,15 @@ const App = () => {
   return (
     <div className='wrapper'>
       <div className='wrapper__textBody'>
+        {textBody}
+        {textBody}
+        {textBody}
+        {textBody}
+        {textBody}
+        {textBody}
+        {textBody}
+        {textBody}
+        {textBody}
         {textBody}
         {textBody}
         {textBody}

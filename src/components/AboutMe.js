@@ -8,7 +8,7 @@ const AboutMe = () => {
   return (
     <div
       className='menu about-me'
-      // className='menu about-me--unorganized'
+      // className='menu about-me about-me--unorganized'
       onClick={() => handleBusinessCardClick('aboutme')}
     >
       {/* <BusinessCard text='Who am I' /> */}

@@ -1,22 +1,49 @@
-.animation__frame {
+.animation {
   position: absolute;
   // background-color: rgba(56, 51, 109, 0.612);
-  // border: green dotted 2px;
+  // border: rgb(148, 28, 15) dotted 20px;
   z-index: 2;
-  grid-area: animationframe;
-
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 250vh;
 
-  // width: 63vw;
-  // height: 114vw;
+  display: grid;
+  grid-template:
+    'cardsmenu'
+    'laptop';
+  grid-template-rows: auto auto;
+  grid-template-columns: auto;
 
-  width: 100%;
-  height: 100%;
+  &__menu {
+    position: relative;
+    grid-area: cardsmenu;
+    width: 100vw;
+    height: 100vh;
+    // top: 0;
+    // left: 0;
+    // border: 10px yellow dotted;
+  }
 
-  // height: 63vh;
-  // max-height: 100vh;
+  &__cards {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 4%;
+    transform: rotate(8deg);
+  }
+
+  &__laptop {
+    margin-top: 150px;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    // top: 100%;
+    // left: 0;
+    grid-area: laptop;
+  }
 
   @media (max-resolution: 1dppx) and (min-width: 1280px) {
     width: 100vw;

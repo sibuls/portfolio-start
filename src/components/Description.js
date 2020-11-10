@@ -7,7 +7,7 @@ const Description = () => {
   return (
     <div
       className='menu  description'
-      // className='menu   description-unorganized'
+      // className='menu   description description--unorganized'
       onClick={() => handleBusinessCardClick('description')}
     >
       {/* <BusinessCard text='What Im doing' /> */}

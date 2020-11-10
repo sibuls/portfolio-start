@@ -8,8 +8,7 @@ const Projects = () => {
   return (
     <div
       className='menu  projects'
-      // className='menu   projects-unorganized'
-
+      // className='menu   projects projects--unorganized'
       onClick={handleBusinessCardClick}
     >
       {/* <BusinessCard text='Who am I' /> */}

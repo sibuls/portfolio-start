@@ -11,15 +11,23 @@ import Steps from './Steps';
 
 const AnimationFrame = () => {
   return (
-    <div className='animation__frame'>
-      <Phone />
-      {/* <Laptop /> */}
-      <AboutMe />
-      <Description />
-      <Steps />
+    <div className='animation'>
+      <div className='animation__menu'>
+        <Phone />
+        {/* <Laptop /> */}
 
-      <Projects />
-      <Contact />
+        <div className='animation__cards'>
+          {' '}
+          <AboutMe />
+          <Description />
+          <Steps />
+          <Projects />
+          <Contact />
+        </div>
+      </div>
+      <div className='animation__laptop'>
+        <Laptop />
+      </div>
     </div>
   );
 };
