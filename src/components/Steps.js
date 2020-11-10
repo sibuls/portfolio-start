@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AppContext, defaultObject } from '../AppContext';
 import BusinessCard from './BusinessCard';
 
-function Steps(props) {
+function Steps() {
+  const { handleBusinessCardClick } = useContext(AppContext);
   return (
     <div
       className='menu  steps'
       //  className='menu  steps  steps--unorganized'
+      onClick={() => handleBusinessCardClick('steps')}
     >
       <BusinessCard text={'Steps'} />
     </div>

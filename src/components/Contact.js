@@ -8,10 +8,10 @@ const Contact = () => {
     <div
       className='menu contact'
       // className='menu   contact contact--unorganized'
-      onClick={handleBusinessCardClick}
+      onClick={() => handleBusinessCardClick('contact')}
     >
       {/* <BusinessCard text='Who am I' /> */}
-      <BusinessCard text='contact' />
+      <BusinessCard text='Contact' />
     </div>
   );
 };

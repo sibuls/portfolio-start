@@ -9,10 +9,10 @@ const Projects = () => {
     <div
       className='menu  projects'
       // className='menu   projects projects--unorganized'
-      onClick={handleBusinessCardClick}
+      onClick={() => handleBusinessCardClick('projects')}
     >
       {/* <BusinessCard text='Who am I' /> */}
-      <BusinessCard text='projects' />
+      <BusinessCard text='Projects' />
     </div>
   );
 };
