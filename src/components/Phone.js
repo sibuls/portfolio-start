@@ -13,17 +13,10 @@ const DivAnimation = styled.div`
   animation: 5s ${(props) => props.phoneShowMain} ease-out 1;
 `;
 
-//
-//
-
 const PhoneBottom = styled.div`
   animation: 1s 0s ${(props) => props.phoneBottomAnime} ease-out 1,
     3s 0s ${(props) => props.phoneToTabletBottom} ease-out forwards;
 `;
-
-//
-//
-
 const Frame = styled.div`
   animation: 3s 0s ${(props) => props.frameAnime} ease-out 1,
     4s 1s ${(props) => props.phoneToTabletFrame} ease-out forwards; ;
@@ -59,7 +52,7 @@ const Phone = (props) => {
   const animationStartTop = menuActive === 'start' ? '50%' : '56%';
   const animationStartLeft = menuActive === 'start' ? '150%' : '51%';
   // const animationTime = menuActive === 'start' ? '5s' : '3s';
-  const screenTime = menuActive === 'start' ? '10s' : '1s';
+  const screenTime = menuActive === 'start' ? '10s' : '12s';
   const screenOpacity = menuActive === 'start' ? '0' : '0.6';
 
   // --loading page animations--
@@ -118,59 +111,50 @@ const Phone = (props) => {
   //
   // --end of loading page animations--
 
+  //
   //--start animations: transform phone to tablet--
 
-  // fist animation of phone parts - gold bottom
+  // first animation of transform - bottom
   const phoneToTabletBottom = keyframes`
   0% {${menuActive === 'steps' ? 'height:100%;' : null}}
   10% {${menuActive === 'steps' ? 'height:100%;' : null}}
   80% {${menuActive === 'steps' ? 'height:100%;' : null}}
-  100% {${menuActive === 'steps' ? 'width:250%; height:90%;left:-60%' : null}}
+  100% {${menuActive === 'steps' ? '' : null}}
   `;
 
+  // second animation of transform - frame and glass
+  const phoneToTabletFrame = keyframes`
+  0% {${menuActive === 'steps' ? '' : null}}
+  100% {${menuActive === 'steps' ? ' ' : null}}
+  `;
+
+  const phoneToTabletGlass = keyframes`
+  0% {${menuActive === 'steps' ? '' : null}}
+  100% {${menuActive === 'steps' ? '  ' : null}}
+  `;
+
+  // third animation of transform - browser
   const phoneToTabletScreen = keyframes`
-  0% {${
-    menuActive === 'steps'
-      ? 'width:90%; height:75%; left:5%; top:12%; background:black; '
-      : null
-  }}
-  30% {${
-    menuActive === 'steps'
-      ? 'width:90%; height:75%; left:5%; top:12%; background:black;  '
-      : null
-  }}
+  0% {${menuActive === 'steps' ? '  background:black; ' : null}}
+  30% {${menuActive === 'steps' ? ' background:black;  ' : null}}
  
   99% {${menuActive === 'steps' ? 'background:black;  ' : null}}
 
-  100% {${
-    menuActive === 'steps' ? 'width:180%; height:70% ;top:10%;left:-30%' : null
-  }}
+  100% {${menuActive === 'steps' ? ' ' : null}}
   `;
 
   const phoneToTabletBrowser = keyframes`
   0% {${menuActive === 'steps' ? ' opacity:0;' : null}}
  
-  
+ 
   60% {${menuActive === 'steps' ? '  opacity:0;' : null}}
-  100% {${
-    menuActive === 'steps'
-      ? 'width:180%; height:70%;top:10%; left:-30%; '
-      : null
-  }}
+  100% {${menuActive === 'steps' ? '  ' : null}}
   `;
 
-  const phoneToTabletFrame = keyframes`
-  0% {${menuActive === 'steps' ? '' : null}}
-  100% {${menuActive === 'steps' ? 'width:240%; height:90%;left:-60%;' : null}}
-  `;
-
-  const phoneToTabletGlass = keyframes`
-  0% {${menuActive === 'steps' ? '' : null}}
-  100% {${menuActive === 'steps' ? 'width:240%; height:90%;left:-60%; ' : null}}
-  `;
+  // fourth animation of transform -accesories
 
   //--end animations: transform phone to tablet--
-
+  //
   // return Phone function
   return (
     <React.Fragment>
