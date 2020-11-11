@@ -52,7 +52,7 @@ const Phone = (props) => {
   const animationStartTop = menuActive === 'start' ? '50%' : '56%';
   const animationStartLeft = menuActive === 'start' ? '150%' : '51%';
   // const animationTime = menuActive === 'start' ? '5s' : '3s';
-  const screenTime = menuActive === 'start' ? '10s' : '12s';
+  const screenTime = menuActive === 'start' ? '10s' : '22s';
   const screenOpacity = menuActive === 'start' ? '0' : '0.6';
 
   // --loading page animations--
