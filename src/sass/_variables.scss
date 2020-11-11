@@ -58,6 +58,17 @@ $color-background: linear-gradient(
   ),
   $color-gray-dark;
 
+$color-background-orange: linear-gradient(
+    135deg,
+    rgba(#faf3dd, 1) 1%,
+    rgba(#faf3dd, 1) 10%,
+    rgba(#d7cdae, 1) 30%,
+    rgba(#e6e0d0, 1) 50%,
+    rgba(#bdb7a4, 1) 80%,
+    rgba(#dad5c6, 1) 100%
+  ),
+  rgb(97, 68, 36);
+
 // color backround lighter
 $color-background-body: linear-gradient(
     135deg,

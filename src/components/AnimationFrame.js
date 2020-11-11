@@ -13,7 +13,7 @@ const AnimationFrame = () => {
   return (
     <div className='animation'>
       <div className='animation__menu'>
-        <Phone />
+        <Phone color={'white'} />
         {/* <Laptop /> */}
 
         <div className='animation__cards'>
@@ -26,7 +26,7 @@ const AnimationFrame = () => {
         </div>
       </div>
       <div className='animation__laptop'>
-        <Laptop />
+        <Phone color={'black'} />
       </div>
     </div>
   );
